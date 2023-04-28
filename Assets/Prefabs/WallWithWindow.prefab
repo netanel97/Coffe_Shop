@@ -13,7 +13,7 @@ GameObject:
   m_Name: WallWithWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8381078193139320546
@@ -32,7 +32,7 @@ Transform:
   - {fileID: 5821684684168633588}
   - {fileID: 6226617574912390182}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7705534043383344849
 PrefabInstance:
@@ -89,6 +89,14 @@ PrefabInstance:
     - target: {fileID: 4465713380347341879, guid: 14c94d957b09e594fa99e1f3ff6b464a, type: 3}
       propertyPath: m_Name
       value: WallPart1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465713380347341879, guid: 14c94d957b09e594fa99e1f3ff6b464a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465713380347341879, guid: 14c94d957b09e594fa99e1f3ff6b464a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -160,6 +168,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallPart1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4465713380347341879, guid: 14c94d957b09e594fa99e1f3ff6b464a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465713380347341879, guid: 14c94d957b09e594fa99e1f3ff6b464a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -225,6 +241,14 @@ PrefabInstance:
     - target: {fileID: 4465713380347341879, guid: 14c94d957b09e594fa99e1f3ff6b464a, type: 3}
       propertyPath: m_Name
       value: WallPart1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465713380347341879, guid: 14c94d957b09e594fa99e1f3ff6b464a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465713380347341879, guid: 14c94d957b09e594fa99e1f3ff6b464a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

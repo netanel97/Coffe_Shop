@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -18,27 +19,41 @@ public class DoritBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (Input.GetKeyDown(KeyCode.X)){//phoneCall
-            animator.SetInteger("Status", 0);
-        }
-        if (Input.GetKeyDown(KeyCode.Z))//Falling down
+        /**
+        float distance = Vector3.Distance(transform.position, target.transform.position);
+        if (distance < 3)
         {
-            animator.SetInteger("Status", 1);
+            agent.enabled = false;//cancel the walking
+            animator.SetInteger("Status", 1);//stand
         }
-        if (Input.GetKeyDown(KeyCode.C))//Stand Up
-            //KeyCode is which key was pressed
+        if (Input.GetKeyDown(KeyCode.G)) //start walking
         {
-            animator.SetInteger("Status", 2);
+            if (agent.enabled)
+            {
+                agent.SetDestination(target.transform.position);//find path to target
+            }
+            animator.SetInteger("Status", 0);//set animation walking
+
+
         }
         */
+
+        float distance = Vector3.Distance(transform.position, target.transform.position);
+        if (distance < 3)
+        {
+            //agent.enabled = false;//cancel the walking
+            animator.SetInteger("Status", 2);//talk
+        }
         if (Input.GetKeyDown(KeyCode.Q)) //start walking
         {
-            agent.SetDestination(target.transform.position);
+            if (agent.enabled)
+            {
+                agent.SetDestination(target.transform.position);//find path to target
+            }
+            animator.SetInteger("Status", 1);//set animation walking
+
+
         }
-       
-        if (Input.GetKeyDown(KeyCode.X)){//stand
-            animator.SetInteger("Status", 0);
-        }
+
     }
 }
